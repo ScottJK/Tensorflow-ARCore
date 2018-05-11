@@ -478,7 +478,7 @@ public class HelloArActivity extends AppCompatActivity implements GLSurfaceView.
                 }
 
                 if (bestMatch != null && !detectingObjects) {
-                    ArrayList<Vector3f> points = getPointCloudCoordinates(frame);
+                    ArrayList<Vector3f> points = getPointCloudCoordinates(frame, 0.5f);
                     Log.d(TAG, "" + bestMatchCenter[0] + ", " + bestMatchCenter[1]);
                     if (points.size() > 0) {
                         Pose closestPose = null;
